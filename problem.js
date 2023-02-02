@@ -37,3 +37,10 @@ while (loopControl <= 100) {
   console.log("আসকে আমার মন ভালো নেই");
   loopControl++;
 }
+for (var a = 1; a < 7; a++) {
+  console.log(a);
+}
+function myFunc(...a) {
+  console.log(a);
+}
+myFunc(13, 3, 7);
