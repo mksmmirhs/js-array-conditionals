@@ -30,3 +30,23 @@ function evenOdd(inputString) {
   }
 }
 console.log(evenOdd("batch7"));
+
+// problem 3
+
+function isLGSeven(inputNumber) {
+  // checks if the input is a valid number
+  if (typeof inputNumber !== "number") {
+    console.log("please enter a valid Number");
+  } else {
+    //gets absolute difference of input and 7
+    const absoluteDifference = Math.abs(inputNumber - 7);
+    // checks if the difference is less than 7 or not and returns the result according to the condition.
+    if (absoluteDifference < 7) {
+      return inputNumber - 7;
+    } else {
+      return absoluteDifference * 2;
+    }
+  }
+}
+
+console.log(isLGSeven(-15));
